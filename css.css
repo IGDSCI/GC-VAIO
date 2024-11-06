@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --primary-color : #171717;
+    --background-color: #090909;
+    --footer-color: #16171C;
+    --input-border-pagamento: #212121;
+    --input-border-header: #333;
+    --sub-text-color: #767676;
+    --hover-color-texto: #ffffff7c;
+    --hover-color-pagamento: #21212111;
+    --hover-color-botao: #3951ec81;
+    --white-color: #FFFFFF;
+    --input-border-focus: #00BEFF;
+    --input-botao-color: #3952EC;
+    --input-border-erro: #EE250F;
+    --mensagem-erro-color: #EE250F;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: "Roboto Condensed", sans-serif;
+    color: var(--white-color);
+    margin: 0;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--input-border-header);
+    padding: 1rem;
+    position: fixed;
+    background-color: var(--background-color);
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+}
+
+#img-vaio-header{
+    width: 92px;
+    height: 22.5px;
+    margin-left: 8rem;
+}
+
+#div-nav{
+    display: flex;
+    align-items: center;
+}
+
+.responsivo-mobile{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container-nav{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-left: 6rem;
+}
+
+.texto-header{
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.texto-header:hover{
+    color: var(--hover-color-texto);
+}
+
+#div-icones{
+    display: flex;
+    gap: 2rem;
+    margin-right: 8rem;
+    align-items: center;
+}
+
+.tamanho-icone-carrinho{
+    width: 29.01px;
+    height: 18.75px;
+    cursor: pointer;
+}
+
+.tamanho-icone-perfil{
+    width: 21.3px;
+    height: 22.5px;
+    cursor: pointer;
+}
+
+#nav-mobile{
+    display: none; 
+}
+
+.mostrar-icone{
+    font-size: 28px;
+    display: inline;
+    cursor: pointer;
+}
+
+.esconder-icone{
+    font-size: 28px;
+    display: none;
+    cursor: pointer;
+}
+/* HEADER */
+
+
+/* HERO SECTION  */
+#hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.bloco-geral-hero{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+#espaco-hero{
+    margin-top: 5rem;
+}
+
+#img-black-friday{
+    width: 45%;
+}
+
+#titulo-hero{
+    width: 440px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+}
+
+#div-cadastro{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.input-cadastro{
+    outline-width: 0;
+    border-width: 0;
+    border-bottom: 1px solid var(--white-color);
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    color: var(--white-color);
+    margin-bottom: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input-cadastro:focus{
+    border-bottom: 1px solid var(--input-border-focus);
+}
+
+.borda-erro{
+    outline-width: 0;
+    border-width: 0;
+    border-bottom: 1px solid var(--input-border-erro);
+    padding: 1rem;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    color: var(--white-color);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container-checkbox {
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+#check-politica{
+    margin: 0;
+    cursor: pointer;
+}
+
+#texto-checkbox{
+    color: var(--sub-text-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19.6px;
+    margin: 0;
+}
+
+#link-politica{
+    cursor: pointer;
+}
+
+.mostrar{
+    display: inline;
+}
+
+.esconder{
+    display: none;
+}
+
+.mensagem-erro{
+    color: var(--mensagem-erro-color);
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 0.2rem;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#botao-cadastrar{
+    padding: 1rem;
+    background-color: var(--input-botao-color);
+    width: 216px;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    color: var(--white-color);
+    border: 0;
+    margin-top: 1rem;
+}
+
+#botao-cadastrar:hover{
+    background-color: var(--hover-color-botao);
+}
+/* HERO SECTION  */
+
+
+/* OFERTA SECTION */
+#oferta-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
+}
+
+.bloco-geral-oferta{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+#titulo-oferta{
+    font-weight: 700;
+    font-size: 36px;
+}
+
+#descricao-oferta{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+#imagem-computador-oferta{
+    width: 45%;
+}
+/* OFERTA SECTION */
+
+
+/* PAGAMENTO SECTION */
+#pagamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+#div-pagamento{
+    text-align: center;
+}
+
+#titulo-pagamento{
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 1rem;
+}
+
+#descricao-pagamento{
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0;
+}
+
+#container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+#card-pix {
+    background-color: var(--primary-color);
+    border: 1px solid var(--input-border-pagamento);
+    width: 100%;
+    max-width: 380px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#card-pix:hover {
+    background-color: var(--hover-color-pagamento);
+}
+
+.sub-card-pagamento {
+    background-color: var(--primary-color);
+    border: 1px solid var(--input-border-pagamento);
+    width: 100%;
+    max-width: 380px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 2rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.sub-card-pagamento:hover {
+    background-color: var(--hover-color-pagamento);
+}
+
+.espaco-pagamento {
+    margin-bottom: 1rem;
+}
+
+#img-pix{
+    width: 42.85px;
+    height: 42.85px;
+}
+
+#img-cartao{
+    width: 53.62px;
+    height: 42px;
+}
+
+#img-boleto{
+    width: 25.42px;
+    height: 42px;
+}
+
+.sub-texto-pagamento{
+    color: var(--sub-text-color);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+#img-nupay{
+    width: 84px;
+    height: 25.6px;
+}
+
+#img-picpay{
+    width: 84px;
+    height: 27.1px;
+}
+
+.titulo-card{
+    font-weight: 700;
+    font-size: 21px;
+    margin-bottom: 0rem;
+}
+
+.descricao-card{
+    font-weight: 400;
+    font-size: 16px;
+}
+/* PAGAMENTO SECTION */
+
+
+/* POTENCIA SECTION */
+#potencia{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+}
+
+.bloco-geral-potencia{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    margin-bottom: 1rem;
+}
+
+#img-computador-potencia{
+    width: 45%;
+}
+
+#titulo-potencia{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.2px;
+}
+
+.texto-potencia{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+/* POTENCIA SECTION */
+
+
+/* FOOTER */
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer-color);
+}
+
+.bloco-geral-footer{
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-left: 4rem;
+    margin-right: 4rem;
+}
+
+#espaco-footer{
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+
+.card-footer{
+    width: 160px;
+}
+
+#img-boleto-footer{
+    width: 60px;
+    height: 43px;
+}
+
+#img-cartao-footer{
+    width: 62px;
+    height: 45px;
+}
+
+#img-bandeira-footer{
+    width: 57px;
+    height: 43px;
+}
+
+#img-seguranca-footer{
+    width: 60px;
+    height: 43px;
+}
+
+.titulo-footer{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.sub-texto-footer{
+    color: var(--sub-text-color);
+    font-weight: 400;
+    font-size: 16px;
+}
+/* FOOTER */
+
+
+@media(max-width: 966px){
+    
+    /* HEADER */
+    #nav-mobile{
+        display: flex;
+        align-items: center;
+    }
+
+    .header-mobile{
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: start;
+        right: -100%;
+        background-color: var(--primary-color);
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        gap: 10px;
+        transition: 0.3s;
+        padding-top: 1rem;
+    }
+    
+    .header-mobile.ativo{
+        right: 0;
+    }
+
+    #container-nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+        gap: 0;
+    }
+
+    #div-icones{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        margin-top: 1rem;
+    }
+
+    #img-vaio-header{
+        margin-left: 0;
+    }
+    /* HEADER */
+
+
+    /* HERO */
+    .bloco-geral-hero{
+        flex-direction: column;
+    }
+
+    #div-cadastro{
+        width: 80%;
+        min-width: 260px;
+    }
+
+    #titulo-hero{
+        width: 100%;
+        text-align: center;
+    }
+
+    #div-botao{
+        text-align: center;
+    }
+
+    #cadastro-mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #img-black-friday{
+        width: 45%;
+        min-width: 260px;
+    }
+    /* HERO */
+
+
+    /* OFERTA */
+    .bloco-geral-oferta{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #imagem-computador-oferta{
+        width: 45%;
+        min-width: 260px;
+    }
+    /* OFERTA */
+
+
+    /* POTENCIA */
+    .bloco-geral-potencia{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    #img-computador-potencia{
+        width: 45%;
+        min-width: 260px;
+    }
+    /* POTENCIA */
+
+
+    /* PAGAMENTO */
+    #card-pix {
+        max-width: 332.56px;
+    }
+
+    .sub-card-pagamento {
+        max-width: 332.56px;
+        height: auto;
+    }
+    /* PAGAMENTO */
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo_vaio_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <meta name="description" content="Explore os melhores computadores e notebooks da Vaio. Performance, qualidade e inovação em cada detalhe. Confira nossos modelos!">
+    <meta name="keywords" content="Vaio, Computadores, Notebooks, Tecnologia, Inovação, Laptops, Desempenho, Qualidade, Computador Pessoal" />
+    <meta property="og:title" content="VAIO - Inovação e Qualidade">
+    <meta property="og:description" content="Conheça os notebooks e computadores da Vaio, perfeitos para qualquer necessidade.">
+    <meta property="og:type" content="website">
+    <title>VAIO - Inovação e Qualidade</title>
+</head>
+<body>
+    <header>
+        <img src="imagens/logo_vaio_header.png" alt="Logo da VAIO" id="img-vaio-header">
+        <div class="responsivo-mobile header-mobile" id="container-mobile">
+            <div id="div-nav">
+                <nav id="container-nav">
+                    <h2 class="texto-header">NOTEBOOKS</h2>
+                    <h2 class="texto-header">ACESSÓRIOS</h2>
+                    <h2 class="texto-header">SUPORTE</h2>
+                </nav>
+            </div>
+            <div id="div-icones">
+                <img src="imagens/icone_carrinho.png" alt="Icone de Carrinho de compras" class="tamanho-icone-carrinho">
+                <img src="imagens/icone_perfil.png" alt="Icone de Perfil" class="tamanho-icone-perfil">
+            </div>
+        </div>
+        <div id="nav-mobile">
+            <h3 class="bi bi-list mostrar-icone" id="icone-menu"></h3>
+            <h3 class="bi bi-x-lg esconder-icone" id="icone-close"></h3>
+        </div>
+    </header>
+    <main>
+        <section id="hero-section">
+            <div class="bloco-geral-hero" id="espaco-hero">
+                <img src="imagens/black_friday.png" alt="Imagem Black Friday da VAIO" id="img-black-friday">
+                <div id="cadastro-mobile">
+                    <h2 id="titulo-hero">Cadastre-se e receba primeiro as ofertas da Black Friday</h2>
+                    <div id="div-cadastro">
+                        <form action="" id="formulario">
+                            <input type="text" name="nome" placeholder="Digite seu nome" class="input-cadastro" id="input-nome" required>
+                            <h4 class="mensagem-erro esconder" id="mensagem-erro-nome">Campo obrigatório</h4>
+                            <input type="email" name="email" placeholder="Digite seu e-mail" class="input-cadastro" id="input-email" required>
+                            <h4 class="mensagem-erro esconder" id="mensagem-erro-email">Insira um e-mail válido</h4>
+                            <input type="tel" name="numero" placeholder="Número de celular" class="input-cadastro" id="input-celular" required>
+                            <h4 class="mensagem-erro esconder" id="mensagem-erro-celular">Campo obrigatório</h4>
+                            <div class="container-checkbox">
+                                <input type="checkbox" name="check-politica" id="check-politica" required>
+                                <div>
+                                    <label for="check-politica" id="texto-checkbox">Utilizamos seus dados com a finalidade de orientar sobre produtos e demais informações pertinentes. Para maiores informações sobre a utilização dos seus dados consulte nossa <u id="link-politica">Política de Privacidade.</u></label>
+                                    <h4 class="esconder mensagem-erro" id="mensagem-erro-politica">Favor concorde com os nossos termos</h4>
+                                </div>
+                            </div>
+                            <div id="div-botao">
+                                <input type="submit" value="Cadastrar" id="botao-cadastrar">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="oferta-section">
+            <div class="bloco-geral-oferta">
+                <div>
+                    <h2 id="titulo-oferta">Confira as ofertas disponíveis!</h2>
+                    <h3 id="descricao-oferta">A Black Friday VAIO é a oportunidade perfeita para adquirir um notebook ou tablet de alta performance com descontos incríveis. Seja para o trabalho ou estudos, ambos são dispositivos indispensáveis em nosso cotidiano. Você não estará apenas comprando um notebook ou tablet, mas também garantindo confiabilidade e desempenho superiores. Conhecida por sua excelência em tecnologia, a marca Japonesa VAIO conquistou a confiança de consumidores em todo o mundo. A escolha do modelo mais adequado para suas necessidades pode ser desafiadora em meio a tantas opções, no entanto, a Black Friday VAIO está repleta de ofertas para que você possa adquirir o seu produto a um preço justo. Aproveite para explorar todas as ofertas em nosso site. Boas compras!</h3>
+                </div>
+                <img src="imagens/computador-oferta.jpg" alt="Computador VAIO" id="imagem-computador-oferta">
+            </div>
+        </section>
+        <section id="pagamento">
+            <div id="div-pagamento">
+                <h2 id="titulo-pagamento">Pague da sua maneira</h2>
+                <h3 id="descricao-pagamento">A VAIO<sup>&copy;</sup> disponibiliza muitas formas de pagamento para sua comodidade.</h3>
+            </div>
+            <div id="container-card">
+                <div id="card-pix">
+                    <img src="imagens/icone_pix.png" alt="Icone do PIX" id="img-pix">
+                    <h2 class="titulo-card">Pix</h2>
+                    <h3 class="descricao-card">Ganhe desconto pagando à vista</h3>
+                </div>
+                <div>
+                    <div class="sub-card-pagamento espaco-pagamento">
+                        <img src="imagens/icone_cartao.png" alt="Icone de Cartão" id="img-cartao">
+                        <h2 class="titulo-card">Pague com dois cartões</h2>
+                        <h3 class="descricao-card">Em até 10x sem juros</h3>
+                    </div>
+                    <div class="sub-card-pagamento">
+                        <img src="imagens/icone_boleto.png" alt="Icone de Boleto" id="img-boleto">
+                        <h2 class="titulo-card">Boleto parcelado em até 24x</h2>
+                        <h3 class="sub-texto-pagamento">Sujeito a análise de crédito. Juros a partir de 1.99% a.m.</h3>
+                    </div>
+                </div>
+                <div>
+                    <div class="sub-card-pagamento espaco-pagamento">
+                        <img src="imagens/icone_nupay.png" alt="Icone do NuPay" id="img-nupay">
+                        <h2 class="titulo-card">Pague em até 15x sem juros</h2>
+                        <h3 class="sub-texto-pagamento">É necessário ser cliente nubank e ter limite deisponível no valor total da compra.</h3>
+                    </div>
+                    <div class="sub-card-pagamento">
+                        <img src="imagens/icone_picpay.png" alt="Icone do PicPay" id="img-picpay">
+                        <h2 class="titulo-card">PicPay</h2>
+                        <h3 class="descricao-card">Pague direto do seu celular</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="potencia">
+            <div class="bloco-geral-potencia">
+                <img src="imagens/computador-potencia.png" alt="Computador VAIO" id="img-computador-potencia">
+                <div>
+                    <h2 id="titulo-potencia">Notebooks VAIO: Potência para diversas necessidades:</h2>
+                    <h3 class="texto-potencia">O processador de um notebook é o cérebro do seu dispositivo, por isso é muito importante que ele tenha a potência certa seja para o trabalho ou entretenimento. Na Black Friday VAIO você encontra modelos equipados com processadores Core i5 e i7 que são ideais para garantir um desempenho excepcional.</h3>
+                    <h3 class="texto-potencia">Oferecemos também a opção de processadores AMD que igualmente oferecem um excelente desempenho. Os processadores AMD são conhecidos por sua capacidade de lidar com tarefas intensivas e oferecer um desempenho gráfico notável. Se você é um entusiasta de jogos, criador de conteúdo ou profissional que demanda poder de processamento, os notebooks VAIO AMD são uma escolha sólida desta Black Friday. Eles não apenas fornecem a potência necessária, mas também a confiabilidade que você espera da marca VAIO. E o melhor de tudo? </h3>
+                    <h3 class="texto-potencia">Todos os modelos estão com os melhores descontos, fazendo a diferença no seu bolso. Confira nossa seleção!</h3>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="bloco-geral-footer" id="espaco-footer">
+            <div class="card-footer">
+                <img src="imagens/icone_boleto_footer.png" alt="Icone de Boleto" id="img-boleto-footer">
+                <h2 class="titulo-footer">10% DE DESCONTO</h2>
+                <h3 class="sub-texto-footer">No boleto bancário</h3>
+            </div>
+            <div class="card-footer">
+                <img src="imagens/icone_cartao_footer.png" alt="Icone de Cartão" id="img-cartao-footer">
+                <h2 class="titulo-footer">EM ATÉ 10X SEM JUROS</h2>
+                <h3 class="sub-texto-footer">Para compras no cartão</h3>
+            </div>
+            <div class="card-footer">
+                <img src="imagens/icone_bandeira_footer.png" alt="Icone de Bandeira" id="img-bandeira-footer">
+                <h2 class="titulo-footer">TECNOLOGIA JAPONESA</h2>
+                <h3 class="sub-texto-footer">Produzida no Brasil</h3>
+            </div>
+            <div class="card-footer">
+                <img src="imagens/icone_seguranca_footer.png" alt="Icone de Segurança" id="img-seguranca-footer">
+                <h2 class="titulo-footer">AMBIENTE SEGURO</h2>
+                <h3 class="sub-texto-footer">Compra 100% Protegida</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>
